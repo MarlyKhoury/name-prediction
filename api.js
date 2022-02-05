@@ -2,15 +2,12 @@ var user_input= prompt("insert name:")
 const gender_url= "https://api.genderize.io/?name="+user_input
 const age_url="https://api.agify.io/?name="+ user_input
 const nationality_url="https://api.nationalize.io/?name="+ user_input
-
-// myInterval = setInterval(getAge(), 1000);
-// myInterval = setInterval(getNationality(), 1000);
-
+const dog_url="https://dog.ceo/api/breeds/image/random"
 
 getGender()
 getAge()
 getNationality()
-
+getDog()
 
 
 
@@ -45,5 +42,12 @@ async function getNationality(){
     }
 }
 
+async function getDog(){
+    const response= await fetch(dog_url);
+    const dog_data=  await response.json();
+    const dog= dog_data.message
+    document.getElementById("image").src=dog
 
+    
 
+}
