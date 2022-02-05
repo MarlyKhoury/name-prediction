@@ -1,19 +1,25 @@
-var user_input= prompt("insert name:")
-const gender_url= "https://api.genderize.io/?name="+user_input
-const age_url="https://api.agify.io/?name="+ user_input
-const nationality_url="https://api.nationalize.io/?name="+ user_input
+// var user_input= prompt("insert name:")
+const gender_url= "https://api.genderize.io/?name="
+const age_url="https://api.agify.io/?name="
+const nationality_url="https://api.nationalize.io/?name="
 const dog_url="https://dog.ceo/api/breeds/image/random"
 
-getGender()
-getAge()
-getNationality()
-getDog()
+ getDog()
+
+
+function getPrediction(){
+    
+    var user_input =document.getElementById("name").value
+   
+    getGender(user_input)
+    getAge(user_input)
+    getNationality(user_input)
 
 
 
-
-async function getGender(){
-    const response= await fetch(gender_url);
+}
+async function getGender(user_input){
+    const response= await fetch(gender_url+ user_input);
     const gender_data=  await response.json();
     const gender= gender_data.gender;
     document.getElementById("gender").textContent= gender;
@@ -21,8 +27,9 @@ async function getGender(){
 }
 
 
-async function getAge(){
-    const response= await fetch(age_url);
+
+async function getAge(user_input){
+    const response= await fetch(age_url+user_input);
     const age_data=  await response.json();
     const age= age_data.age;
     document.getElementById("age").textContent= age;
@@ -30,13 +37,16 @@ async function getAge(){
 }
 
 
-async function getNationality(){
-    const response= await fetch(nationality_url);
+async function getNationality(user_input){
+    document.getElementById("nationality").innerHTML = null
+
+    const response= await fetch(nationality_url+user_input);
     const nationality_data=  await response.json();
     const nationality= nationality_data.country
+    // var my_list =document.getElementById("nationality").innerHTML 
     for (const i in nationality){
        var list= "<li>"+nationality[i].country_id+"</li>"
-        document.getElementById("nationality").innerHTML += list
+       document.getElementById("nationality").innerHTML += list
         
         
     }
@@ -46,8 +56,6 @@ async function getDog(){
     const response= await fetch(dog_url);
     const dog_data=  await response.json();
     const dog= dog_data.message
-    document.getElementById("image").src=dog
-
-    
+    document.getElementById("image").src=dog 
 
 }
