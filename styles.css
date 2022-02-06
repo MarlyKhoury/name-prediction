@@ -68,7 +68,6 @@ button{
 }
 
 
-/* -------------------------------------------------- */
 ul{
   padding:0;
   margin:0;
@@ -108,7 +107,7 @@ p{
   box-sizing: border-box;
   width     : 200px;
   height    : 190px;
-  padding   : 40px 0em 0 2em;
+  padding   : 35px 0em 0 2em;
   color: white;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
