@@ -99,6 +99,7 @@ ul li:nth-child(9){
 } */
 
 p{
+  margin-top: 35px;
   text-align: center;
   color: white;
   font-family: 'Courier New', Courier, monospace;
