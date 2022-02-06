@@ -78,21 +78,15 @@ h1{
   color: white;
 }
 
-h4{
+p{
   text-align: center;
   color: white;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 #name{
   margin-top: 5em;
 }
-
-
-
-
-
-
-
 
 
 
@@ -105,6 +99,9 @@ h4{
   height    : 200px;
   padding   : 40px 2em 0 3em;
   color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+
   
   margin    : 100px 100px;
 
@@ -124,10 +121,7 @@ h4{
 
 
   position: absolute;
-  bottom  : 0;
-
-  
-  
+  bottom  : 0;  
 
   background-color: tomato;
   border-radius: 100%;
