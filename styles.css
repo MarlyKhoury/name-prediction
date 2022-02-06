@@ -60,7 +60,7 @@ button{
   color: #fff;
   text-transform: uppercase;
   line-height:40px ;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: -70px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
@@ -90,14 +90,6 @@ ul li:nth-child(9){
   color:tomato;
 }
 
-
-/* h1{
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 50px;
-  color: white;
-} */
-
 p{
   margin-top: 35px;
   text-align: center;
@@ -115,7 +107,7 @@ p{
 
   box-sizing: border-box;
   width     : 200px;
-  height    : 200px;
+  height    : 190px;
   padding   : 40px 0em 0 2em;
   color: white;
   font-family: 'Courier New', Courier, monospace;
@@ -131,7 +123,6 @@ p{
   border-radius: 100% 100% 0 0;
   
 }
-
 
 .fancy:before,
 .fancy:after {
