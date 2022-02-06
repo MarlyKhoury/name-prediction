@@ -57,11 +57,9 @@ async function getDog(){
     const response= await fetch(dog_url);
     const dog_data=  await response.json();
     const dog= dog_data.message
-    document.getElementById("image").src=dog
-
+    document.getElementById("image").src=dog     
     document.body.style.backgroundImage = 'url('+dog+')'
-    document.body.style.backgroundPosition=""
-  
+
 }
 
 
