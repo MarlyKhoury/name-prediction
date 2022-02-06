@@ -12,11 +12,13 @@
  <div class="wrapper">
     <div class="form-area">
         <div class="result-area">
-            <label for="result"><span>Result</span></label>
+            <label for="result"><span>  </span></label>
             <output name="result"></output> 
         <div class="fancy">
             <span id="gender"></span>
+            <br/>
             <span id="age"></span>
+            <br/>
             <span id="nationality"></span>
 
             
@@ -26,21 +28,23 @@
         <div class="details-area">
             <h1>PredictMe.</h1>
            
-            <h3>Welcome to the place where you can know everything <br/>
+            <h4>Welcome to the place where you can know everything <br/>
                 about a person only through
                 their name!!<br/> Just insert your name in the box to find out what<br/>
                  PredictMe has to say about
                 your Gender, Age and Nationality.
                 <br/>You might be surprised!
-            </h3>
+            </h4>
             
-
+            <div class="first-name">
             <label for="name">First Name</label>   
+            </div>
+
+            <input type="text" id="name" name="">          
             
-            <input type="text" id="name" name="" required>          
-            
+            <div>             
             <button id="butt_name" onClick="getPrediction()">PREDICT</button>
-            
+           </div> 
             
         </div>  
         

@@ -15,6 +15,7 @@ body{
 
 .wrapper {
   display:flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -25,74 +26,49 @@ body{
     /* width: 800px;
     margin: 5% auto; */
   }
+  
+  .form-area{
+    display:flex;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,0.8);
+    border-radius: 25px;
+    padding: 1.9em;
+    margin-right: -8px;
+  }
+  
 
-.form-area{
-  display:flex;
-  flex-wrap: wrap;
-  background: rgba(0,0,0,0.8);
-  border-radius: 25px;
-  padding: 1.9em;
-}
-
-.result-area{
-  /* display: flex;
-  flex-direction: column; */
-  order: 2px;
-}
-
-.result-area > textarea{
-  flex:1;
-  min-width: 18em;
-  background: transparent;
-  color:#fff;
-  padding: 15px;
-}
-
-.details-area{
-  flex:1;
-  order:1;
-  margin-right: 2em;
-}
-
-.details-area input{
-  width:40%;
-  background: transparent;
+input{
+  padding: 1em;
+  margin-bottom: 1em;
+  width:50%;
+  background: rgba(255,255,255,.2);
   color:#fff;
   border-radius: 40px;
-  margin-left:100px;
+  margin-left:26%;
+}
+
+button{
+  background-color: tomato;
+  color:#fff;
+  padding: 3% 10%;
+  border-radius: 40px;
+  font-size: 15px;
+  text-transform:uppercase;
+  margin-top: 5%;
+  margin-left: 33%;
   
 }
 
-.details-area input,
-.details-area button{
-  padding: 1em;
-  margin-bottom: 1em;
-}
-
-.details-area button{
-  background-color: tomato;
-  color:#fff;
-  padding: 15px 50px;
-  border-radius: 40px;
-  font-family:poppins;
-  font-size: 15px;
-  text-transform:uppercase;
-}
-
-label{
-  color:#fff;
+.first-name{
+  color: #fff;
   text-transform: uppercase;
-  line-height: 40px;
-  font-family: Audiowide;
-
+  line-height:40px ;
+  margin-top: 40px;
+  margin-bottom: -70px;
+  text-align: center;
 }
 
-.res-display{
-  width: 80px;
-  border: 5px solid rgb(15, 13, 12);
-  padding: 20px;
-  margin: 1px;
-}
+
 /* -------------------------------------------------- */
 
 h1{
@@ -102,10 +78,22 @@ h1{
   color: white;
 }
 
-h3{
+h4{
   text-align: center;
   color: white;
 }
+
+#name{
+  margin-top: 5em;
+}
+
+
+
+
+
+
+
+
 
 
 .fancy {
@@ -114,11 +102,11 @@ h3{
   
   box-sizing: border-box;
   width     : 200px;
-  height    : 170px;
-  padding   : 80px 1em 0 1em;
-
+  height    : 200px;
+  padding   : 40px 2em 0 3em;
+  color: white;
   
-  margin    : 0 100px;
+  margin    : 100px 100px;
 
   position: relative;
 
