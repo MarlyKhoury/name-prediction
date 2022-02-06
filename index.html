@@ -1,21 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
-    <h1>Gender: <span id="gender"></span></h1>
-    <h1>Age: <span id="age"></span></h1>
-    <h1>Nationality: <span id="nationality"></span></h1>
-    <img id= "image" src="">
+ <div class="wrapper">
+    <div class="form-area">
+        <div class="result-area">
+            <label for="result"><span>Result</span></label>
+            <output name="result"></output> 
+        <div class="fancy">
+            <span id="gender"></span>
+            <span id="age"></span>
+            <span id="nationality"></span>
 
-    <input type="text" id="name" name="names" required>
+            
+        </div> 
+        </div>
+        
+        <div class="details-area">
+            <h1>PredictMe.</h1>
+           
+            <h3>Welcome to the place where you can know everything <br/>
+                about a person only through
+                their name!!<br/> Just insert your name in the box to find out what<br/>
+                 PredictMe has to say about
+                your Gender, Age and Nationality.
+                <br/>You might be surprised!
+            </h3>
+            
 
-    <button id="butt_name" onClick="getPrediction()">PREDICT</button>
+            <label for="name">First Name</label>   
+            
+            <input type="text" id="name" name="" required>          
+            
+            <button id="butt_name" onClick="getPrediction()">PREDICT</button>
+            
+            
+        </div>  
+        
+        
+        
+        
+    </div>
 
-    <script src="api.js" type="text/javascript"></script>
+
+
+</div>
+    <!-- <img id="image" src=""> -->
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+<script src="api.js" type="text/javascript"></script>
 </body>
 </html>
