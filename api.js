@@ -1,4 +1,4 @@
-// var user_input= prompt("insert name:")
+
 const gender_url= "https://api.genderize.io/?name="
 const age_url="https://api.agify.io/?name="
 const nationality_url="https://api.nationalize.io/?name="
@@ -44,7 +44,6 @@ async function getNationality(user_input){
     const response= await fetch(nationality_url+user_input);
     const nationality_data=  await response.json();
     const nationality= nationality_data.country
-    // var my_list =document.getElementById("nationality").innerHTML 
     for (const i in nationality){
         var list= "<li>"+nationality[i].country_id+"</li>"
         document.getElementById("nationality").innerHTML += "Nationality" + list
