@@ -4,19 +4,20 @@ const age_url="https://api.agify.io/?name="
 const nationality_url="https://api.nationalize.io/?name="
 const dog_url="https://dog.ceo/api/breeds/image/random"
 
-//  getDog()
+
+ getDog()
 
 
 function getPrediction(){
     
     var user_input =document.getElementById("name").value
-   
+    
     getGender(user_input)
     getAge(user_input)
     getNationality(user_input)
-
-
-
+    
+    
+    
 }
 async function getGender(user_input){
     const response= await fetch(gender_url+ user_input);
@@ -39,14 +40,14 @@ async function getAge(user_input){
 
 async function getNationality(user_input){
     document.getElementById("nationality").innerHTML = null
-
+    
     const response= await fetch(nationality_url+user_input);
     const nationality_data=  await response.json();
     const nationality= nationality_data.country
     // var my_list =document.getElementById("nationality").innerHTML 
     for (const i in nationality){
-       var list= "<li>"+nationality[i].country_id+"</li>"
-       document.getElementById("nationality").innerHTML += "Nationality" + list
+        var list= "<li>"+nationality[i].country_id+"</li>"
+        document.getElementById("nationality").innerHTML += "Nationality" + list
         
         
     }
@@ -56,9 +57,13 @@ async function getDog(){
     const response= await fetch(dog_url);
     const dog_data=  await response.json();
     const dog= dog_data.message
-    document.getElementById("image").src=dog 
+    document.getElementById("image").src=dog
 
+    document.body.style.backgroundImage = 'url('+dog+')'
+    document.body.style.backgroundPosition=""
+  
 }
+
 
 // function displayChart(){
 //     for(var i=0;i<5;i++){

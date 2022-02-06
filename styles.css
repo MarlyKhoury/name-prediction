@@ -1,20 +1,27 @@
-/* *{
+*{
   box-sizing: border-box;
-} */
-
-body{
-  background-color: #efbbff;
-  background-size: cover;
-  background-position: center center;
-  
-
 }
 
+body{
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width:98%;
+  margin:0%;
+} 
+
+ 
+
 .wrapper {
-  display: flex;
+  display:grid;
+  place-items: center;
+  min-height: 100vh;
+ 
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
     /* width: 800px;
     margin: 5% auto; */
   }
@@ -22,7 +29,7 @@ body{
 .form-area{
   display:flex;
   flex-wrap: wrap;
-  background: #cb8eee;
+  background: rgba(0,0,0,0.8);
   border-radius: 25px;
   padding: 1.9em;
 }
@@ -92,10 +99,12 @@ h1{
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   font-size: 50px;
+  color: white;
 }
 
 h3{
   text-align: center;
+  color: white;
 }
 
 
@@ -105,7 +114,7 @@ h3{
   
   box-sizing: border-box;
   width     : 200px;
-  height    : 200px;
+  height    : 170px;
   padding   : 80px 1em 0 1em;
 
   
@@ -142,7 +151,7 @@ h3{
   height : 125px;
 
   
-  left    : -80px;
+  left    : -100px;
 
  
   border-bottom-right-radius: 0;
