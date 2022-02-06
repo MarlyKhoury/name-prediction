@@ -51,11 +51,11 @@ button{
   color:#fff;
   padding: 3% 10%;
   border-radius: 40px;
-  font-size: 15px;
+  font-size: small;
   text-transform:uppercase;
   margin-top: 5%;
-  margin-left: 33%;
-  
+  margin-left: 36%;
+  position:relative;
 }
 
 .first-name{
@@ -149,8 +149,9 @@ p{
   border-bottom-left-radius: 0;
 }
 
-@media (max-width:1047px){
+/* @media (max-width:1047px){
   .form-area{
     justify-content: center;
   }
-}
+
+} */
