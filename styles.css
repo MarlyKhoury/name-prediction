@@ -24,6 +24,7 @@ body{
   display:flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
+  
   background: rgba(37, 37, 37, 0.8);
   border-radius: 25px;
   padding: 1.9em;
@@ -43,9 +44,6 @@ input{
 
 
 button{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
   background-color: tomato;
   color:#fff;
   padding: 3% 10%;
