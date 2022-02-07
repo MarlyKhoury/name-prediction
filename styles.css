@@ -24,6 +24,7 @@ body{
 .form-area{
   display:flex;
   flex-wrap: wrap-reverse;
+  justify-content: center;
   background: rgba(37, 37, 37, 0.8);
   border-radius: 25px;
   padding: 1.9em;
@@ -41,6 +42,7 @@ input{
   margin-left:26%;
 }
 
+
 button{
   background-color: tomato;
   color:#fff;
@@ -55,6 +57,7 @@ button{
   position:relative;
 }
 
+
 .first-name{
   color: #fff;
   text-transform: uppercase;
@@ -66,9 +69,11 @@ button{
   font-weight: bold;
 }
 
+
 #name{
   margin-top: 5em;
 }
+
 
 ul{
   padding:0;
@@ -82,14 +87,14 @@ ul{
   color: white;
 }
 
-
 ul li:nth-child(8){
     color:tomato;
 }
 
 ul li:nth-child(9){
-  color:tomato;
+    color:tomato;
 }
+
 
 p{
   margin-top: 35px;
@@ -99,9 +104,7 @@ p{
 }
 
 
-
-
-.fancy {
+.cloud {
 
   box-sizing: border-box;
   width     : 200px;
@@ -122,8 +125,8 @@ p{
   
 }
 
-.fancy:before,
-.fancy:after {
+.cloud:before,
+.cloud:after {
   
   content: '';
   position: absolute;
@@ -133,7 +136,8 @@ p{
   border-radius: 100%;
 }
 
-.fancy:before {
+
+.cloud:before {
   
   width  : 125px;
   height : 125px;
@@ -142,7 +146,8 @@ p{
   border-bottom-right-radius: 0;
 }
 
-.fancy:after {
+
+.cloud:after {
   
   width  : 100px;
   height : 100px;  
@@ -152,20 +157,31 @@ p{
 }
 
 
+img{
+  opacity:0;
+  width:0;
+  height:0
+}
 
-
-@media (max-width:612px){
-  button{
+@media (max-width:1014px){
+  /* button{
     margin-left: 34%;
   }
 
-  .fancy{
+  .cloud{
     margin-left: 170px;
   }
 
   .details-area{
     margin-left: 30px;
+  } */
+  
+  .form-area{
+    border-radius: 0px;
   }
 
+}
+
+@media (max-width:1014px){
   
 }
