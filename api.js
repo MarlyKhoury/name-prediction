@@ -59,16 +59,3 @@ async function getDog(){
     document.body.style.backgroundImage = 'url('+dog+')'
 
 }
-
-
-// function displayChart(){
-//     for(var i=0;i<5;i++){
-//         console.log(i)
-//         var list= "<div id=chart"+[i]+">ddddd"+[i]+"</div>"
-//         document.getElementsByClassName("wrapper")[0].innerHTML += list
-            
-//         document.getElementById("chart"+[i]).style.width=Math.floor(Math.random()*101)+"%"
-//         document.getElementById("chart"+[i]).style.backgroundColor="#"+Math.floor(Math.random()*16777215).toString(16)
-//     }
-// }
-// displayChart()

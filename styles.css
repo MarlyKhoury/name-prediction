@@ -3,7 +3,6 @@
 }
 
 body{
-  /* -webkit-background-size: cover; */
   background-size:cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -44,6 +43,9 @@ input{
 
 
 button{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: tomato;
   color:#fff;
   padding: 3% 10%;
@@ -163,25 +165,29 @@ img{
   height:0
 }
 
-@media (max-width:1014px){
-  /* button{
-    margin-left: 34%;
-  }
-
-  .cloud{
-    margin-left: 170px;
-  }
-
-  .details-area{
-    margin-left: 30px;
-  } */
-  
+@media (max-width:1032px){
   .form-area{
     border-radius: 0px;
   }
-
+  
 }
 
-@media (max-width:1014px){
+
+@media (max-width:414px){
+  button{
+    margin-left: 34%;
+  }
   
+  .cloud{
+    margin-left: 170px;
+  }
+  
+  .details-area{
+    margin-left: 30px;
+  }
+    
+  .form-area{
+    margin-left: 40px;
+  }
+ 
 }
